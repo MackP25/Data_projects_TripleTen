@@ -1,11 +1,11 @@
-# Superstore Analysis Project
-  This project analyzes profitability and return rates for the Suerstore dataset.											https://public.tableau.com/views/Superstore_Project_17449536073150/ReturnedItems?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+# Superstore Cohort Analysis Project
+  This analysis aims to measure how many users convert from viewing product pages to making purchases, and to track monthly cohort metrics beginning from the month of each user's first purchase.										(https://docs.google.com/spreadsheets/d/1Simwpcy1OxemD-U__m1vVc62VVZxPAQq2mirpVUNAe4/edit?gid=868644233#gid=868644233)
 
 ##Description
   The project covers:
     
-      -Profit centers and ares of loss.
+      -User's purchase activity.
       
-      -Advertising insights.
+      -Conversion and Retention Rates.
       
-      -Return Rates by product and customer.
+      -Tracking cohort age.
