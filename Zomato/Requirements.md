@@ -27,9 +27,13 @@
 ### Data Analysis
 1. Domino’s Pizza: Leading in Popularity and Revenue Generation
     * These charts compare the rating_count and total sales_amounts per restaurant. Domino’s Pizza has the highest rating_count of  442 and the highest sales_amount at 5.0M.
+![Screenshot 2025-06-04 152932](https://github.com/user-attachments/assets/d7a8106d-0761-4522-9131-32b9d9a4b5b3)
+![Screenshot 2025-06-04 153652](https://github.com/user-attachments/assets/0bf9d86a-0fc1-4148-b3e7-48d52ceb0ef0)
 
 2. Indian and Chinese Cuisines: Top Revenue Generators and Most Frequently Ordered
     * Through comparing order_count and total sales_amount by cuisine type, it is prominent that Indian and Chinese cuisines are the most popular among customers and generate the highest revenue.
+![Screenshot 2025-06-04 154518](https://github.com/user-attachments/assets/238bcc88-727d-4d57-aefc-682e477f7f49)
+![Screenshot 2025-06-04 160048](https://github.com/user-attachments/assets/59238282-045d-4836-a507-e57b4dd4dac3)
 
 ### Results
 This analysis consisted of three main research questions: What are the most popular restaurants? What restaurants generate the highest revenue and why? What cuisines are the most popular?
