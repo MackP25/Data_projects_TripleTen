@@ -33,6 +33,4 @@
 ### Technologies
 * Microsoft Spreadsheets was the primary technological tool used in the collection and analysis of the business analytics dataset for this project. 
 
-- Microsoft Spreadsheets
-
 [Click here to see live Version --> ](https://docs.google.com/spreadsheets/d/1Simwpcy1OxemD-U__m1vVc62VVZxPAQq2mirpVUNAe4/edit?gid=868644233#gid=868644233)
