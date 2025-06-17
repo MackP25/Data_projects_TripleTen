@@ -1,4 +1,4 @@
-# Cohort Analysis									
+# Fresh Beats									
 
   The project covers:
     
@@ -8,7 +8,7 @@
       
       -Tracking cohort age.
 
-# COHORT ANALYSIS
+# FRESH BEATS
 
 ## Executive Summary
 * The following analysis is to determine how many users from the company's website are converted from product pages views to purchases and to track cohort metrics on a month to month basis, starting with the month of each users first purchase. 
