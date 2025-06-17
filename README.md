@@ -12,4 +12,3 @@ Projects I worked on while attending the Business Intelligence Analyst TripleTen
 | 6 | [Returns Analysis](https://github.com/MackP25/Data_projects_TripleTen/tree/main/Returns) | The purpose for this project was to understand current trends in return rates for the Superstore dataset and suggest ways to reduce such rates.|
 | 7 | [Shopify](https://github.com/MackP25/Data_projects_TripleTen/tree/main/Shopify) | Description|
 | 8 | [Zomato Project](https://github.com/MackP25/Data_projects_TripleTen/tree/main/Zomato)| The purpose of this analysis is to develop an analytical dashboard and report that offers actionable insights into Zomato's business decisions regarding performance and customer satisfaction, with a focus on restaurant popularity, revenue trends, and top-performing cuisines.|
-| 8 | [Name](Link) | Description |
