@@ -26,12 +26,15 @@
 ### Data Analysis
 1. Customer Conversion Rates:
     * Conversion rates were calculated for unique users at each stage of the funnel, including the overall conversion rate from the view page to the purchase page.
+-![Screenshot 1](![Screenshot 2025-06-17 162235](https://github.com/user-attachments/assets/75313472-ae12-450e-aa2d-66304e07acd5)
 
 2. Cohort Metrics:
     * The first purchase date was determined for each user_id, and cohort age was calculated for each user. A conversion funnel was then created to count the number of unique users in each cohort, broken down by the number of months since their first purchase date.
+![Screenshot 2025-06-17 162355](https://github.com/user-attachments/assets/f1198ea4-a9cb-456c-ac68-0aa74fe96206)
 
 3. Retention Rates:
     * Retention rates were calculated for each cohort, and a table was created to display the retention rates by cohort age as percentages.
+![Screenshot 2025-06-17 162438](https://github.com/user-attachments/assets/68dd5f30-bba3-4551-b3cd-d4f1ef8b1181)
 
 ### Results
 This analysis focused on three key areas: evaluating how effectively the company converts product page views into purchases, determining the first_purchase_month for each user to segment cohorts by monthly age, and calculating retention rates for each cohort.
