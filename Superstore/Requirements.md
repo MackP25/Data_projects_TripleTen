@@ -45,4 +45,4 @@ This analysis focused on three key areas: evaluating how effectively the company
 * To improve conversion rates, the company could consider increasing advertising efforts on social media platforms to drive more product page views. Implementing time-sensitive incentives—such as discount codes or free shipping for users who complete a purchase shortly after adding items to their cart—may also encourage quicker conversions.
 * To enhance user retention, offering random discounts or free gifts to returning users could serve as an effective strategy to boost long-term engagement.
 
-[Click here to see live Version --> ](https://docs.google.com/spreadsheets/d/1Simwpcy1OxemD-U__m1vVc62VVZxPAQq2mirpVUNAe4/edit?gid=868644233#gid=868644233)
+[Click here to see live Version --> ](https://public.tableau.com/app/profile/mack.pickar/viz/shared/9P5K7NCG4)
