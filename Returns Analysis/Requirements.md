@@ -2,16 +2,16 @@
 
   The project covers:
     
-      -User's purchase activity.
+      -Compares overall sales and return rates to evaluate return behavior.
       
-      -Conversion and Retention Rates.
+      -Analyzes return rates by quantity and by month/year to identify potential seasonal trends.
       
-      -Tracking cohort age.
+      -Examines return rates by product category and sub-category to pinpoint items with higher return frequencies.
 
 # RETURNS ANALYSIS
 
 ## Executive Summary
-* The following analysis is to determine how many users from the company's website are converted from product pages views to purchases and to track cohort metrics on a month to month basis, starting with the month of each users first purchase. 
+* This project is focused on analyzing patterns and trends in product return rates within Superstore's operations. The ultimate goal is to provide strategic recommendations that can help Superstore reduce return rates, improve customer satisfaction, and enhance overall operational efficiency.
 
 ### Research Question/Project Guidelines
 
