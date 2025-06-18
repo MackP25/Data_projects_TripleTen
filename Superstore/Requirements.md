@@ -2,22 +2,24 @@
 
   The project covers:
     
-      -User's purchase activity.
+      -Profit centers and areas of loss.
       
-      -Conversion and Retention Rates.
+      -Advertising insights.
       
-      -Tracking cohort age.
+      -Return Rates by product and customer.
 
 # SUPERSTORE
 
 ## Executive Summary
-* The following analysis is to determine how many users from the company's website are converted from product pages views to purchases and to track cohort metrics on a month to month basis, starting with the month of each users first purchase. 
+* This project analyzes profitability and return rates for the Superstore dataset.
 
-### Research Question/Project Guidelines
+### Research Questions/Project Guidelines
 
-1. How well is the store converting product page views into purchases?
-2. Break up cohorts by first purchase month and track monthly cohort metrics.
-3. Calculate monthly retention rates. 
+1. Identify the top two most profitable and the two least profitable combinations of dimension pairs (e.g., sub-category + region, or shipping mode + product ID) to pinpoint key profit centers and loss-makers. Use this analysis to determine which individual products the superstore should consider discontinuing.
+2. Analyze product subcategories to recommend three high-performing categories the store should prioritize and three underperforming ones to phase out, based on profitability and overall performance trends.
+3. Identify the top three state–month combinations with the highest average profit for targeted advertising. Create a visualization illustrating the average monthly profit for each of these states throughout the year. Based on a return on ad spend (ROAS) assumption where advertising spend should equal 1/5 of the expected profit, calculate and justify the recommended advertising budget for each selected state and month.
+4. Create a calculated field for returns by converting Returned values: assign a value of 1 to "Yes" and 0 to null. Use this field to build visualizations that answer two key questions: (1) Which products have the highest return rate? (2) Which customers have the highest return rate?
+5. Visualize the relationship between average profit and average return rate across a chosen dimension. Use this analysis to present a data-driven argument for whether the superstore should continue or discontinue operations within that dimension.
 
 ### Methodology
 * The business analytics dataset was downloaded as a spreadsheet and then cleaned and prepared for analysis. The specific columns used were `event_type`, `event_date`, and `user_id`. I filtered the data to include only purchase events and created a new sheet to calculate the `first_purchase_month` for each user. The conversion funnel displays the number of unique users at each stage and shows the conversion rates between stages. Additionally, I calculated the retention rate of active users within four months of their first purchase date.
