@@ -2,11 +2,11 @@
 
   The project covers:
     
-      -User's purchase activity.
+      -Prepare and organize raw data for analysis by handling missing values, formatting, and standardizing entries.
       
-      -Conversion and Retention Rates.
+      -Create Pivot tables and visualizations to summarize key metrics and reveal trends in rental data.
       
-      -Tracking cohort age.
+      -Analyze data to uncover the most sought-after properties and neighborhoods among renters.
 
 # VACATION RENTALS
 
@@ -14,34 +14,43 @@
 * The following analysis is to determine which neighbourhoods and property sizes are most attractive for vacation rentals and how much revenue they generate, to assist our client in deciding which properties to invest in.
 
 ### Research Question/Project Guidelines
-
 1. Which neighborhoods and property sizes (i.e. number of bedrooms) are most attractive for vacation rentals?
 2. How much money did the most attractive listings generate?
 
 ### Methodology
-* The business analytics dataset was downloaded as a spreadsheet and then cleaned and prepared for analysis. The specific columns used were `event_type`, `event_date`, and `user_id`. I filtered the data to include only purchase events and created a new sheet to calculate the `first_purchase_month` for each user. The conversion funnel displays the number of unique users at each stage and shows the conversion rates between stages. Additionally, I calculated the retention rate of active users within four months of their first purchase date.
-* Microsoft Spreadsheets was the primary technological tool used in the collection and analysis of the business analytics dataset for this project.
+* Standardized text by removing inconsistent capitalization and trailing spaces, replaced empty fields with "0", and stored cleaned data in new columns for neighborhoods and other key fields.
+* Used Pivot tables and bar charts to identify top 10 listings and neighborhoods, analyze bedroom popularity, and summarize nightly revenue by listing ID.
+* Added a column to flag top listings, calculated nightly and projected annual revenue (based on a 30-day sample), and transferred results to an existing sheet for reporting.
 
 ### Data Analysis
-1. Customer Conversion Rates:
-    * Conversion rates were calculated for unique users at each stage of the funnel, including the overall conversion rate from the view page to the purchase page.
+1. Data Processing:
+    * Standardized text formatting, replaced empty fields with "0", and stored cleaned values in new columns for analysis.
+    * Added a column to flag top listings, calculated nightly and projected annual revenue, and transferred results to an existing report sheet.
+![Screenshot 2025-06-18 132223](https://github.com/user-attachments/assets/39473bee-2551-454c-8515-ef0ac6ed0bba)
 
-2. Cohort Metrics:
-    * The first purchase date was determined for each user_id, and cohort age was calculated for each user. A conversion funnel was then created to count the number of unique users in each cohort, broken down by the number of months since their first purchase date.
+2. Top Neighborhoods:
+    * Compared number of reviews across neighborhoods using a Pivot table and bar chart to identify the most attractive areas.
+    * Filtered results to highlight the top ten neighborhoods by review count.
+![Screenshot 2025-06-18 132954](https://github.com/user-attachments/assets/cf3bc663-61a0-4574-a68e-34865be20258)
 
-3. Retention Rates:
-    * Retention rates were calculated for each cohort, and a table was created to display the retention rates by cohort age as percentages.
+3. Bedroom Analysis by Top Rental:
+    * Analyzed the number of bedrooms in top listings across the top ten neighborhoods to identify popular rental configurations.
+    * Used a Pivot table to determine the most in-demand bedroom counts and filtered results to the top ten neighborhoods.
+<img width="796" alt="Screenshot 2025-06-18 134644" src="https://github.com/user-attachments/assets/8e4cb9c4-0cb2-4313-b714-425dc7b6a58f" />
+
+4. High Revenue-Generating Properties:
+    * Calculated nightly revenue for each listing and summarized it using a Pivot table by listing ID.
+    * Estimated annual revenue by extrapolating from a 30-day sample and transferred results to an existing sheet for reporting.
 
 ### Results
-This analysis focused on three key areas: evaluating how effectively the company converts product page views into purchases, determining the first_purchase_month for each user to segment cohorts by monthly age, and calculating retention rates for each cohort.
-  * According to our analysis, 29% of users who view the product page add the item to their shopping cart and only 36% of those users who add to their carts finalize a purchase through the company's website. Only 10% of users who viewed the product page ended up making a purchase. 
-  * A comparison of unique user_id counts across cohort ages reveals a significant decline in user numbers as the cohorts age.
-  * The calculations show that retention rate dramatically decreases after the user's first month on the website.
+  * A comparison of the total number of reviews by neighborhood identified the top ten most popular neighborhoods, with the Lower East Side, Hell's Kitchen, and Harlem emerging as the top three areas with the highest renter engagement.
+  * One-bedroom units are the most sought-after property size, followed by studios and two-bedroom apartments, reflecting a preference for compact, cost-effective living options.
+  * The highest revenue-generating property is a **studio in Midtown** (User ID: **49946551**), followed by **one-bedroom units in Hell's Kitchen and the Lower East Side**, highlighting the strong profitability of smaller units in highly sought-after neighborhoods.
+![Screenshot 2025-06-18 143422](https://github.com/user-attachments/assets/56f16fe9-49f6-4342-a2b2-422b5b534491)
 
 ### Conclusion
-* The analysis indicates that only 10% of users who view the product page ultimately complete a purchase. A comparison of unique user_id counts by cohort age shows a significant decline in user engagement over time, highlighting a drop-off as cohorts age. Additionally, retention rates appear to be higher toward the end of the calendar year, suggesting a seasonal influence on user activity.
-* Notably, the cohorts from January and February 2021 exhibit unusually low retention rates, which may point to incomplete or missing data in the raw_user_data for those periods.
-* To improve conversion rates, the company could consider increasing advertising efforts on social media platforms to drive more product page views. Implementing time-sensitive incentives—such as discount codes or free shipping for users who complete a purchase shortly after adding items to their cart—may also encourage quicker conversions.
-* To enhance user retention, offering random discounts or free gifts to returning users could serve as an effective strategy to boost long-term engagement.
+* Analysis of property sizes shows that studios, one-bedroom, and two-bedroom units are the most in-demand among renters, indicating a strong preference for smaller, more affordable living spaces.
+* Based on these insights, our client should consider investing in properties with 0–2 bedrooms located in the top-performing neighborhoods, where demand and occupancy rates are likely to be higher.
+* The highest revenue-generating listing is a studio in Midtown (User ID: 49946551), making it a strong candidate for investment due to its proven earning potential and location appeal.
 
 [Click here to see live Version --> ](https://docs.google.com/spreadsheets/d/1XGy0eCdSyyz_avJ2ikeeh4g6DTfHpYiuE-8i02rU_4U/edit?gid=1185972781#gid=1185972781)
