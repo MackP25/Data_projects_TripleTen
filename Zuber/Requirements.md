@@ -1,4 +1,4 @@
-# Superstore Cohort Analysis Project
+# Zuber
   This analysis aims to measure how many users convert from viewing product pages to making purchases, and to track monthly cohort metrics beginning from the month of each user's first purchase.										
 
 **##Description**
@@ -11,7 +11,7 @@
       
       -Tracking cohort age.
 
-# SUPERSTORE COHORT ANALYSIS
+# ZUBER
 
 ## Overview
 * The goal of this project is to determine how many users from the company's website are converted from product pages views to purchases and to track cohort metrics on a month to month basis, starting with the month of each users first purchase. 
