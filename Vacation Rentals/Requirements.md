@@ -11,13 +11,12 @@
 # VACATION RENTALS
 
 ## Executive Summary
-* The following analysis is to determine how many users from the company's website are converted from product pages views to purchases and to track cohort metrics on a month to month basis, starting with the month of each users first purchase. 
+* The following analysis is to determine which neighbourhoods and property sizes are most attractive for vacation rentals and how much revenue they generate, to assist our client in deciding which properties to invest in.
 
 ### Research Question/Project Guidelines
 
-1. How well is the store converting product page views into purchases?
-2. Break up cohorts by first purchase month and track monthly cohort metrics.
-3. Calculate monthly retention rates. 
+1. Which neighborhoods and property sizes (i.e. number of bedrooms) are most attractive for vacation rentals?
+2. How much money did the most attractive listings generate?
 
 ### Methodology
 * The business analytics dataset was downloaded as a spreadsheet and then cleaned and prepared for analysis. The specific columns used were `event_type`, `event_date`, and `user_id`. I filtered the data to include only purchase events and created a new sheet to calculate the `first_purchase_month` for each user. The conversion funnel displays the number of unique users at each stage and shows the conversion rates between stages. Additionally, I calculated the retention rate of active users within four months of their first purchase date.
@@ -45,4 +44,4 @@ This analysis focused on three key areas: evaluating how effectively the company
 * To improve conversion rates, the company could consider increasing advertising efforts on social media platforms to drive more product page views. Implementing time-sensitive incentives—such as discount codes or free shipping for users who complete a purchase shortly after adding items to their cart—may also encourage quicker conversions.
 * To enhance user retention, offering random discounts or free gifts to returning users could serve as an effective strategy to boost long-term engagement.
 
-[Click here to see live Version --> ](https://docs.google.com/spreadsheets/d/1Simwpcy1OxemD-U__m1vVc62VVZxPAQq2mirpVUNAe4/edit?gid=868644233#gid=868644233)
+[Click here to see live Version --> ](https://docs.google.com/spreadsheets/d/1XGy0eCdSyyz_avJ2ikeeh4g6DTfHpYiuE-8i02rU_4U/edit?gid=1185972781#gid=1185972781)
