@@ -1,5 +1,4 @@
 # Zuber
-  This analysis aims to measure how many users convert from viewing product pages to making purchases, and to track monthly cohort metrics beginning from the month of each user's first purchase.										
 
   The project covers:
     
@@ -7,7 +6,7 @@
       
       -Calculating trips_amount for each taxi company and identifying the most popular.
       
-      -Analyze how ride durations from the Loop to O'Hare differ on rainy Saturdays compared to other days and weather conditions.
+      -The impact of external factors on the number of rides.
 
 # ZUBER
 
