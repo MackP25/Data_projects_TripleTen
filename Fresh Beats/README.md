@@ -2,47 +2,37 @@
 
   The project covers:
     
-      -User's purchase activity.
+      -Artist promotion effectiveness.
       
-      -Conversion and Retention Rates.
+      -User engagement and conversion.
       
-      -Tracking cohort age.
+      -Genre promotion for emerging artists.
 
 # FRESH BEATS
 
 ## Executive Summary
-* The following analysis is to determine how many users from the company's website are converted from product pages views to purchases and to track cohort metrics on a month to month basis, starting with the month of each users first purchase. 
+* The goal of this project is to analyze data visualizations to extract actionable insights and recommendations aimed at improving user engagement and conversion. Additionally, the project seeks to evaluate the effectiveness of artist promotions and identify trends in genre popularity.
 
-### Research Question/Project Guidelines
+### Project Guidelines
 
-1. How well is the store converting product page views into purchases?
-2. Break up cohorts by first purchase month and track monthly cohort metrics.
-3. Calculate monthly retention rates. 
+1. Align data visualizations with their corresponding insights.
+2. Extract actionable takeaways.
+3. Compile a comprehensive report of findings.
 
 ### Methodology
-* The business analytics dataset was downloaded as a spreadsheet and then cleaned and prepared for analysis. The specific columns used were `event_type`, `event_date`, and `user_id`. I filtered the data to include only purchase events and created a new sheet to calculate the `first_purchase_month` for each user. The conversion funnel displays the number of unique users at each stage and shows the conversion rates between stages. Additionally, I calculated the retention rate of active users within four months of their first purchase date.
-* Microsoft Spreadsheets was the primary technological tool used in the collection and analysis of the business analytics dataset for this project.
-
-### Data Analysis
-1. Customer Conversion Rates:
-    * Conversion rates were calculated for unique users at each stage of the funnel, including the overall conversion rate from the view page to the purchase page.
-
-2. Cohort Metrics:
-    * The first purchase date was determined for each user_id, and cohort age was calculated for each user. A conversion funnel was then created to count the number of unique users in each cohort, broken down by the number of months since their first purchase date.
-
-3. Retention Rates:
-    * Retention rates were calculated for each cohort, and a table was created to display the retention rates by cohort age as percentages.
+* The provided data visualizations were downloaded and matched to their corresponding insights. Based on these visuals and insights, a report was developed along with business recommendations.
 
 ### Results
-This analysis focused on three key areas: evaluating how effectively the company converts product page views into purchases, determining the first_purchase_month for each user to segment cohorts by monthly age, and calculating retention rates for each cohort.
-  * According to our analysis, 29% of users who view the product page add the item to their shopping cart and only 36% of those users who add to their carts finalize a purchase through the company's website. Only 10% of users who viewed the product page ended up making a purchase. 
-  * A comparison of unique user_id counts across cohort ages reveals a significant decline in user numbers as the cohorts age.
-  * The calculations show that retention rate dramatically decreases after the user's first month on the website.
+* Electronic and hip hop music are overall on an upwards trend. Additionally, the pop genre peaked in 2021 and is now on a downwards trend.
+![Average Number of Users by Genre over Time](https://github.com/user-attachments/assets/a6d2ce14-3eb3-4b6d-b3b0-b478b0b27610)
+  * Paid users are more active, have steadier growth, and better user retention than free.
+![Tracks listened by user tier over time](https://github.com/user-attachments/assets/69d06d7a-2780-4b51-8ae8-a31648fdfe1b)
+  * Rock is the most popular genre for free users.
+![Listens by genre and user tier over time](https://github.com/user-attachments/assets/5cc146b3-cd6d-458b-b44e-7eb1eaa20630)
 
 ### Conclusion
-* The analysis indicates that only 10% of users who view the product page ultimately complete a purchase. A comparison of unique user_id counts by cohort age shows a significant decline in user engagement over time, highlighting a drop-off as cohorts age. Additionally, retention rates appear to be higher toward the end of the calendar year, suggesting a seasonal influence on user activity.
-* Notably, the cohorts from January and February 2021 exhibit unusually low retention rates, which may point to incomplete or missing data in the raw_user_data for those periods.
-* To improve conversion rates, the company could consider increasing advertising efforts on social media platforms to drive more product page views. Implementing time-sensitive incentives—such as discount codes or free shipping for users who complete a purchase shortly after adding items to their cart—may also encourage quicker conversions.
-* To enhance user retention, offering random discounts or free gifts to returning users could serve as an effective strategy to boost long-term engagement.
+* Conducting deeper analysis of previous years' data is recommended to understand the declining trend in pop music. Marketing efforts should include targeted campaigns aimed at core demographics of popular genres like electronic and hip hop. Additionally, product and marketing teams should explore opportunities to generate leads within alternative or emerging genres.
+* Introduce intermediate pricing tiers between free and paid plans to lower the barrier for conversion. Given the high value of paid users, consider offering time-limited promotions and special deals to encourage upgrades. Additionally, implement a referral program that rewards users with a free trial of the paid tier for successfully referring new users.
+* Rock is the most popular genre for free users- Fresh Beats should focus on promotions tailored towards rock and develop other ways to increase engagement from rock-listeners.
 
-[Click here to see live Version --> ](https://docs.google.com/spreadsheets/d/1XGy0eCdSyyz_avJ2ikeeh4g6DTfHpYiuE-8i02rU_4U/edit?gid=1185972781#gid=1185972781)
+[Click here to see live Version --> ](https://docs.google.com/document/d/1noi-NNBD8jJ4M_flBCDuF5tO62AReaqBU5RBNbu7FHE/edit?tab=t.0)
