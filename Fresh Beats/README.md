@@ -24,6 +24,7 @@
 
 ### Results
 * Electronic and hip hop music are overall on an upwards trend. Additionally, the pop genre peaked in 2021 and is now on a downwards trend.
+
 ![Average Number of Users by Genre over Time](https://github.com/user-attachments/assets/a6d2ce14-3eb3-4b6d-b3b0-b478b0b27610)
   * Paid users are more active, have steadier growth, and better user retention than free.
 ![Tracks listened by user tier over time](https://github.com/user-attachments/assets/69d06d7a-2780-4b51-8ae8-a31648fdfe1b)
