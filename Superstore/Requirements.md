@@ -15,36 +15,38 @@
 
 ### Research Questions/Project Guidelines
 
-1. Identify the top two most profitable and the two least profitable combinations of dimension pairs (e.g., sub-category + region, or shipping mode + product ID) to pinpoint key profit centers and loss-makers. Use this analysis to determine which individual products the superstore should consider discontinuing.
-2. Analyze product subcategories to recommend three high-performing categories the store should prioritize and three underperforming ones to phase out, based on profitability and overall performance trends.
-3. Identify the top three state–month combinations with the highest average profit for targeted advertising. Create a visualization illustrating the average monthly profit for each of these states throughout the year. Based on a return on ad spend (ROAS) assumption where advertising spend should equal 1/5 of the expected profit, calculate and justify the recommended advertising budget for each selected state and month.
-4. Create a calculated field for returns by converting Returned values: assign a value of 1 to "Yes" and 0 to null. Use this field to build visualizations that answer two key questions: (1) Which products have the highest return rate? (2) Which customers have the highest return rate?
-5. Visualize the relationship between average profit and average return rate across a chosen dimension. Use this analysis to present a data-driven argument for whether the superstore should continue or discontinue operations within that dimension.
+1. Analyze combinations of key dimensions (e.g., sub-category + region) to identify the two most and least profitable pairs, revealing major profit centers and loss-makers. Use these insights to recommend specific products for discontinuation and determine three subcategories to prioritize and three to phase out based on overall performance.
+2. Create a calculated field that converts return data into binary format to identify products and customers with the highest return rates. Analyze the relationship between average profit and return rate across a selected dimension to support a data-driven recommendation on whether to maintain or discontinue operations in that area.
+3. Identify the top three state–month combinations with the highest average profit to guide targeted advertising efforts. Visualize monthly profit trends for these states and, using a ROAS model that allocates 1/5 of projected profit to advertising, calculate and justify the recommended ad spend for each.
 
 ### Methodology
-* The business analytics dataset was downloaded as a spreadsheet and then cleaned and prepared for analysis. The specific columns used were `event_type`, `event_date`, and `user_id`. I filtered the data to include only purchase events and created a new sheet to calculate the `first_purchase_month` for each user. The conversion funnel displays the number of unique users at each stage and shows the conversion rates between stages. Additionally, I calculated the retention rate of active users within four months of their first purchase date.
-* Microsoft Spreadsheets was the primary technological tool used in the collection and analysis of the business analytics dataset for this project.
+* Downloaded the dataset as an .xlsx file and uploaded it into Tableau Public Desktop for analysis.
+* Established relationships between tables to join the data, forming a unified base for exploratory analysis focused on identifying major profit and loss centers.
+* Analyzed profit trends across time and geographic dimensions to determine the most effective periods and locations for targeted advertising.
 
 ### Data Analysis
-1. Customer Conversion Rates:
-    * Conversion rates were calculated for unique users at each stage of the funnel, including the overall conversion rate from the view page to the purchase page.
+1. Profit Analysis Across Categories and Dimensions:
+    * Created a bar chart to visualize total profit by sub-category, color-coded by region, and a pie chart to compare overall profit distribution across regions.
+    * Analyzed profit by product ID and shipping mode to identify performance patterns and potential areas for improvement.
+[Click here to see live Version -->](https://public.tableau.com/app/profile/mack.pickar/viz/ProfitandLossCenters/ProfitsLosses?publish=yes)
+2. Advertising Analysis by State and Month:
+    * Compared average monthly profit for each state to identify top-performing state–month combinations: California in August ($6,368), New York in September ($12,125), and Washington in March ($5,766).
+    * Calculated a return on ad spend (ROAS) of 20% for each, establishing recommended advertising budgets based on their respective average profits.
+[Click here to see live Version --> ](https://public.tableau.com/app/profile/mack.pickar/viz/shared/9P5K7NCG4)
 
-2. Cohort Metrics:
-    * The first purchase date was determined for each user_id, and cohort age was calculated for each user. A conversion funnel was then created to count the number of unique users in each cohort, broken down by the number of months since their first purchase date.
-
-3. Retention Rates:
-    * Retention rates were calculated for each cohort, and a table was created to display the retention rates by cohort age as percentages.
+3. Return Rate Analysis:
+    * Created a calculated field (return_indicator) assigning 1 to "Yes" and 0 to null values in the Returned column, then visualized average return rates by product ID and customer to identify high-return items and frequent returners.
+    * Compared average profit against average return rate by state to determine which states may be less profitable and potential candidates for discontinuing business operations.
+[Click to see the live version -->](https://public.tableau.com/app/profile/mack.pickar/viz/Superstore_Returns_17503746181360/ReturnedItems?publish=yes)
 
 ### Results
-This analysis focused on three key areas: evaluating how effectively the company converts product page views into purchases, determining the first_purchase_month for each user to segment cohorts by monthly age, and calculating retention rates for each cohort.
-  * According to our analysis, 29% of users who view the product page add the item to their shopping cart and only 36% of those users who add to their carts finalize a purchase through the company's website. Only 10% of users who viewed the product page ended up making a purchase. 
-  * A comparison of unique user_id counts across cohort ages reveals a significant decline in user numbers as the cohorts age.
-  * The calculations show that retention rate dramatically decreases after the user's first month on the website.
+  * The West and East regions are the most profitable, while Same Day shipping is the least profitable shipping method. Despite housing the product with the greatest loss, Standard Class shipping remains the most profitable shipping method overall.
+  * Binders yield zero profit in the Central region, and the DocuBind P400 Binding System and Cubify CubeX 3D Printer are the largest loss-making products, with losses of –$20,388 and –$8,880, respectively.
+  * The most profitable subcategories are Phones, Copiers, and Accessories, while Tables, Supplies, and Bookcases are the least profitable.
+  * Top-performing state–month combinations for advertising include California in August ($6,368 avg. profit), New York in September ($12,125), and Washington in March ($5,766), supporting calculated ROAS-based ad budgets. Products with the highest return rates include Printers/Copiers, Phones, and other tech, with Ronald Murray and Hilary Holden identified as the most frequent returners, each with a return rate of 1.0.
 
 ### Conclusion
-* The analysis indicates that only 10% of users who view the product page ultimately complete a purchase. A comparison of unique user_id counts by cohort age shows a significant decline in user engagement over time, highlighting a drop-off as cohorts age. Additionally, retention rates appear to be higher toward the end of the calendar year, suggesting a seasonal influence on user activity.
-* Notably, the cohorts from January and February 2021 exhibit unusually low retention rates, which may point to incomplete or missing data in the raw_user_data for those periods.
-* To improve conversion rates, the company could consider increasing advertising efforts on social media platforms to drive more product page views. Implementing time-sensitive incentives—such as discount codes or free shipping for users who complete a purchase shortly after adding items to their cart—may also encourage quicker conversions.
-* To enhance user retention, offering random discounts or free gifts to returning users could serve as an effective strategy to boost long-term engagement.
-
-[Click here to see live Version --> ](https://public.tableau.com/app/profile/mack.pickar/viz/shared/9P5K7NCG4)
+* Superstore should stop selling binders in the Central region, as they generate no profit, and discontinue underperforming products such as the DocuBind P400 Binding System and categories like Tables, Supplies, and Fasteners.
+* Prioritize sales efforts in the West and East regions, which consistently show strong profitability, and shift resources away from the Central region.
+* Expand offerings and marketing around Copiers, Accessories, and Phones, which are the top-performing subcategories.
+* Allocate advertising budgets based on profit potential—$1,153 for Washington, $2,425 for New York, and $1,274 for California. Continue operations in Vermont, which yields positive profit and has a 0% return rate, while reevaluating or ceasing operations in Ohio, which shows average losses of –$43 and a 0.224 return rate.
