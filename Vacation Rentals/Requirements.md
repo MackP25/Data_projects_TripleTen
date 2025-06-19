@@ -31,7 +31,7 @@
 2. Top Neighborhoods:
     * Compared number of reviews across neighborhoods using a Pivot table and bar chart to identify the most attractive areas.
     * Filtered results to highlight the top ten neighborhoods by review count.
-![Screenshot 2025-06-18 132954](https://github.com/user-attachments/assets/cf3bc663-61a0-4574-a68e-34865be20258)
+![Screenshot 2025-06-19 155142](https://github.com/user-attachments/assets/47ebc948-35b5-4d6a-b39a-02a35ba69d3c)
 
 3. Bedroom Analysis by Top Rental:
     * Analyzed the number of bedrooms in top listings across the top ten neighborhoods to identify popular rental configurations.
