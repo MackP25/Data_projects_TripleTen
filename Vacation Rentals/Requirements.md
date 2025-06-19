@@ -26,7 +26,7 @@
 1. Data Processing:
     * Standardized text formatting, replaced empty fields with "0", and stored cleaned values in new columns for analysis.
     * Added a column to flag top listings, calculated nightly and projected annual revenue, and transferred results to an existing report sheet.
-![Screenshot 2025-06-18 132223](https://github.com/user-attachments/assets/39473bee-2551-454c-8515-ef0ac6ed0bba)
+![Screenshot 2025-06-19 155009](https://github.com/user-attachments/assets/e9a15dcf-5cf0-438b-a618-1a0ca52b0130)
 
 2. Top Neighborhoods:
     * Compared number of reviews across neighborhoods using a Pivot table and bar chart to identify the most attractive areas.
