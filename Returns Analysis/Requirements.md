@@ -19,29 +19,32 @@
 2. Build a dashboard for monitoring returns.
 
 ### Methodology
+* The *Superstore.xlsx* file was imported into Tableau Public Desktop for analysis. After joining the Orders and Returns tables, the primary metrics used were **return rates** and the **total number of returns**.
 * A calculated field was created to convert the Returned values into binary form (1 for "Yes," 0 for null), enabling analysis of return rates across product subcategories, categories, customers, states, and time periods to explore potential correlations and seasonal trends.
-* A customer filter was applied to exclude those with only one order, focusing the analysis on identifying patterns among repeat customers who are more likely to make returns.
+* Filters were applied to exclude customers with only one order, allowing the analysis to focus on repeat customers who are more likely to make returns. Additional filters were added to the final dashboard, enabling users to interactively view data by product category and month of the year.
 
 ### Data Analysis
-1. Customer Conversion Rates:
-    * Conversion rates were calculated for unique users at each stage of the funnel, including the overall conversion rate from the view page to the purchase page.
+1. Returns vs. Sales and Product Categories:
+    * Created a scatterplot to show the correlation between total sales and total returns, aggregated by product subcategory.
+    * Used a bar chart to compare return rates across product categories and identify high-return segments.
 
-2. Cohort Metrics:
-    * The first purchase date was determined for each user_id, and cohort age was calculated for each user. A conversion funnel was then created to count the number of unique users in each cohort, broken down by the number of months since their first purchase date.
+2. Customer Return Analysis:
+    * Analyzed return rates by customer, applying a filter to exclude single-order customers and focus on trends among repeat buyers more prone to returns.
 
-3. Retention Rates:
-    * Retention rates were calculated for each cohort, and a table was created to display the retention rates by cohort age as percentages.
+3. Returns by Geographic and Time Dimensions:
+    * Developed a map to visualize return rates by state, highlighting regional return patterns.
+    * Compared return rates by month and year to assess potential seasonal trends in return behavior.
 
 ### Results
-This analysis focused on three key areas: evaluating how effectively the company converts product page views into purchases, determining the first_purchase_month for each user to segment cohorts by monthly age, and calculating retention rates for each cohort.
-  * According to our analysis, 29% of users who view the product page add the item to their shopping cart and only 36% of those users who add to their carts finalize a purchase through the company's website. Only 10% of users who viewed the product page ended up making a purchase. 
-  * A comparison of unique user_id counts across cohort ages reveals a significant decline in user numbers as the cohorts age.
-  * The calculations show that retention rate dramatically decreases after the user's first month on the website.
+  * Sales do not consistently correlate with return rates, indicating that high sales volumes do not always lead to more returns.
+  * The Technology category has the highest return rate at 27.3%, followed by Office Supplies and Furniture, both at 25%.
+  * West Coast states and the Technology category exhibit the highest return rates, while customers with multiple orders generally show lower return tendencies.
+  * The year 2021 recorded both the highest sales and return rates, with August standing out as the month with the highest return rate.
 
 ### Conclusion
-* The analysis indicates that only 10% of users who view the product page ultimately complete a purchase. A comparison of unique user_id counts by cohort age shows a significant decline in user engagement over time, highlighting a drop-off as cohorts age. Additionally, retention rates appear to be higher toward the end of the calendar year, suggesting a seasonal influence on user activity.
-* Notably, the cohorts from January and February 2021 exhibit unusually low retention rates, which may point to incomplete or missing data in the raw_user_data for those periods.
-* To improve conversion rates, the company could consider increasing advertising efforts on social media platforms to drive more product page views. Implementing time-sensitive incentives—such as discount codes or free shipping for users who complete a purchase shortly after adding items to their cart—may also encourage quicker conversions.
-* To enhance user retention, offering random discounts or free gifts to returning users could serve as an effective strategy to boost long-term engagement.
+* Several sub-categories within the Office Supplies category generate less than $100,000 in profit, potentially indicating product quality concerns that warrant further investigation.
+* Return rates increase during the summer and year-end periods; Superstore should consider implementing seasonal discounts or adjusting pricing strategies during these times to manage return volume more effectively.
+* Customers with fewer total orders tend to have higher return rates. Analyzing these customers by region may help identify whether logistics or shipping issues are contributing factors.
+* The Technology category shows the highest return rates overall. Introducing a return policy that reduces refund value for items returned damaged or in poor condition could help mitigate associated losses.
 
 [Click here to see live Version --> ](https://public.tableau.com/app/profile/mack.pickar/viz/ReturnsAnalysis_17458624776980/ReturnsAnalysis)
