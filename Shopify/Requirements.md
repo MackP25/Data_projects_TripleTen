@@ -2,26 +2,28 @@
 
   The project covers:
     
-      -User's purchase activity.
+      -DAX Calculations
       
-      -Conversion and Retention Rates.
+      -Review Analysis
       
-      -Tracking cohort age.
+      -Dashboard Design
 
 # SHOPIFY
 
 ## Executive Summary
-* The following analysis is to determine how many users from the company's website are converted from product pages views to purchases and to track cohort metrics on a month to month basis, starting with the month of each users first purchase. 
+* This project analyzes app reviews, ratings, developer responsiveness, and engagement metrics on the Shopify platform to uncover key factors driving app success. Using DAX calculations and Power BI visualizations, it highlights patterns and developer practices linked to higher user satisfaction and performance.
 
 ### Research Question/Project Guidelines
 
-1. How well is the store converting product page views into purchases?
-2. Break up cohorts by first purchase month and track monthly cohort metrics.
-3. Calculate monthly retention rates. 
+1. Create calculated columns such as helpful_reviews (rating × [1 + helpful_count]) and developer_answered (1 if developer reply exists, 0 otherwise) to enhance review data analysis.
+2. Analyze key metrics including review count, average ratings, and developer responsiveness across time, category, and region using scatterplots, line charts, and bar graphs.
+3. Build an interactive Power BI dashboard featuring KPI cards, trend visualizations, and filters (e.g., by category or review count) to deliver clear insights on app performance and customer engagement. 
 
 ### Methodology
-* The business analytics dataset was downloaded as a spreadsheet and then cleaned and prepared for analysis. The specific columns used were `event_type`, `event_date`, and `user_id`. I filtered the data to include only purchase events and created a new sheet to calculate the `first_purchase_month` for each user. The conversion funnel displays the number of unique users at each stage and shows the conversion rates between stages. Additionally, I calculated the retention rate of active users within four months of their first purchase date.
-* Microsoft Spreadsheets was the primary technological tool used in the collection and analysis of the business analytics dataset for this project.
+* Imported the shopify.xlsx file into Power BI and established a data model by creating a many-to-one relationship between the Reviews and Apps tables using app_id and id as key fields.
+* Focused analysis on core metrics including ratings, review counts, and developer information to evaluate app performance and engagement.
+* Developed calculated columns using DAX: helpful_reviews to weight ratings by helpfulness (rating × [1 + helpful_count]) and developer_answered as a binary flag for developer responses.
+* Created multiple visualizations including KPI cards, line charts, scatterplots, and bar charts to compare app performance, track trends, and assess developer responsiveness—filtered to highlight apps with over 500 reviews for reliable insights.
 
 ### Data Analysis
 1. Customer Conversion Rates:
