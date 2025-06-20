@@ -26,25 +26,27 @@
 * Created multiple visualizations including KPI cards, line charts, scatterplots, and bar charts to compare app performance, track trends, and assess developer responsiveness—filtered to highlight apps with over 500 reviews for reliable insights.
 
 ### Data Analysis
-1. Customer Conversion Rates:
-    * Conversion rates were calculated for unique users at each stage of the funnel, including the overall conversion rate from the view page to the purchase page.
+1. App Landscape Visualization:
+    * Created a KPI Card showing the total unique number of apps and a Line Chart displaying the sum of review counts over time using lastmod date on the X-axis without hierarchy.
+    * Developed a Scatterplot comparing reviews_count to average rating, accompanied by an annotated text box interpreting the results.
+![Screenshot 2025-06-20 002554](https://github.com/user-attachments/assets/faa3435e-40eb-45c3-b48b-9fe162f99cf3)
 
-2. Cohort Metrics:
-    * The first purchase date was determined for each user_id, and cohort age was calculated for each user. A conversion funnel was then created to count the number of unique users in each cohort, broken down by the number of months since their first purchase date.
+2. Review Data Enhancement and Visualization:
+    * Created a new calculated column, helpful_reviews, in the Reviews table using the formula: rating × (1 + helpful_count), and visualized its average value using a KPI card.
+    * Developed a binary developer_answered column indicating if a developer replied, then created a scatterplot comparing average rating against developer responsiveness.
+![Screenshot 2025-06-20 002925](https://github.com/user-attachments/assets/1f7adaad-252a-42ec-ae08-0e02d2a27aec)
 
-3. Retention Rates:
-    * Retention rates were calculated for each cohort, and a table was created to display the retention rates by cohort age as percentages.
+3. Developer Performance and Responsiveness Analysis:
+    * Established a many-to-one relationship between the Reviews and Apps tables using app_id and id, then created bar charts comparing developers by total ratings and by average helpful_reviews for more accurate insights.
+    * Identified the most responsive developers with a filtered bar chart showing developer responsiveness (based on developer_answered), including only apps with more than 500 reviews for meaningful comparison.
+![Screenshot 2025-06-20 004844](https://github.com/user-attachments/assets/a575119c-afd0-48a7-a392-c79087367fac)
 
 ### Results
-This analysis focused on three key areas: evaluating how effectively the company converts product page views into purchases, determining the first_purchase_month for each user to segment cohorts by monthly age, and calculating retention rates for each cohort.
-  * According to our analysis, 29% of users who view the product page add the item to their shopping cart and only 36% of those users who add to their carts finalize a purchase through the company's website. Only 10% of users who viewed the product page ended up making a purchase. 
-  * A comparison of unique user_id counts across cohort ages reveals a significant decline in user numbers as the cohorts age.
-  * The calculations show that retention rate dramatically decreases after the user's first month on the website.
+  * Most reviews in the dataset have average ratings between 4 and 5 stars, with the majority having fewer than 5,000 reviews.
+  *Surprisingly, average ratings tend to be lower when developers respond compared to when they do not.
+  * The most responsive developers identified are FireApps, followed by DSers and PageFly.
 
 ### Conclusion
-* The analysis indicates that only 10% of users who view the product page ultimately complete a purchase. A comparison of unique user_id counts by cohort age shows a significant decline in user engagement over time, highlighting a drop-off as cohorts age. Additionally, retention rates appear to be higher toward the end of the calendar year, suggesting a seasonal influence on user activity.
-* Notably, the cohorts from January and February 2021 exhibit unusually low retention rates, which may point to incomplete or missing data in the raw_user_data for those periods.
-* To improve conversion rates, the company could consider increasing advertising efforts on social media platforms to drive more product page views. Implementing time-sensitive incentives—such as discount codes or free shipping for users who complete a purchase shortly after adding items to their cart—may also encourage quicker conversions.
-* To enhance user retention, offering random discounts or free gifts to returning users could serve as an effective strategy to boost long-term engagement.
+* Most Shopify apps receive average ratings between 4 and 5 stars, with the majority having fewer than 5,000 reviews. Encouraging users to leave reviews—such as by prompting them after app use or offering incentives—could help increase review volume. Interestingly, average ratings tend to be lower when developers respond to reviews. The most responsive developers, including FireApps, DSers, and PageFly, play a significant role in Shopify’s success, emphasizing the value of active developer engagement and customer interaction.
 
 [Click here to see live Version --> ](https://mpickar-my.sharepoint.com/:u:/g/personal/mackpickar_mpickar_onmicrosoft_com/EXP-TNCMb_dChKClWFkpY1UBLTkYz11cjix00p1pmrKlLQ?e=yHCpga)
