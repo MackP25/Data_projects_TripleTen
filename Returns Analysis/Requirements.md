@@ -19,8 +19,8 @@
 2. Build a dashboard for monitoring returns.
 
 ### Methodology
-* The business analytics dataset was downloaded as a spreadsheet and then cleaned and prepared for analysis. The specific columns used were `event_type`, `event_date`, and `user_id`. I filtered the data to include only purchase events and created a new sheet to calculate the `first_purchase_month` for each user. The conversion funnel displays the number of unique users at each stage and shows the conversion rates between stages. Additionally, I calculated the retention rate of active users within four months of their first purchase date.
-* Microsoft Spreadsheets was the primary technological tool used in the collection and analysis of the business analytics dataset for this project.
+* A calculated field was created to convert the Returned values into binary form (1 for "Yes," 0 for null), enabling analysis of return rates across product subcategories, categories, customers, states, and time periods to explore potential correlations and seasonal trends.
+* A customer filter was applied to exclude those with only one order, focusing the analysis on identifying patterns among repeat customers who are more likely to make returns.
 
 ### Data Analysis
 1. Customer Conversion Rates:
