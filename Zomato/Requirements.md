@@ -1,4 +1,4 @@
-# Zomato									
+# Zomato Performance Dashboard									
 
   The project covers:
     
@@ -8,7 +8,7 @@
       
       -Most ordered types of cuisines.
 
-# ZOMATO
+# ZOMATO PERFORMANCE DASHBOARD
 
 ## Executive Summary
 * This analysis aims to develop an analytical dashboard and report that provides actionable insights to support Zomato's business decisions, particularly in the areas of performance evaluation and customer satisfaction. The focus is on identifying trends in restaurant popularity, revenue generation, and top-performing cuisines to better inform strategic planning and operational improvements. 
@@ -48,3 +48,4 @@ This analysis consisted of three main research questions: What are the most popu
 * The dataset contained a high number of blank or empty values, particularly in the restaurant name and cuisine fields, which may have impacted the accuracy of trend identification and performance comparisons. Additionally, there was a noticeable overlap and inconsistency in the categorization of cuisines, with many similar or duplicate entries, potentially skewing the aggregation of cuisine-based insights. These data quality issues highlight the need for improved data cleaning and standardization to enhance the reliability of future analyses.
 
 [Click here to see live Version --> ](https://mpickar-my.sharepoint.com/:u:/g/personal/mackpickar_mpickar_onmicrosoft_com/EZanegRwB_dMiGjHCOhsKdUBIyv9CWqZ50kGEglfkT-EhQ?e=Yo2hqp)
+
